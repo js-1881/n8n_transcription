@@ -6,7 +6,7 @@ import os
 app = Flask(__name__)
 
 # Load the Whisper model
-model = whisper.load_model("base")
+model = whisper.load_model("tiny")
 
 @app.route('/upload', methods=['POST'])
 def upload_audio():
